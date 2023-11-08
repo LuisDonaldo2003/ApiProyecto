@@ -12,7 +12,9 @@ use App\Models\Registration;
 use App\Models\Student;
 use Illuminate\Http\Request;
 use App\Filters\RegistrationFilters;
+use App\Http\Requests\StoreRegistrationRequest;
 use App\Http\Resources\RegistrationCollection;
+use App\Http\Resources\RegistrationResource;
 
 class RegistrationController extends Controller
 {
@@ -31,16 +33,16 @@ class RegistrationController extends Controller
         //
     }
 
-    public function store(Request $request)
+    public function store(StoreRegistrationRequest $request)
     {
-        //
+        return new RegistrationResource(Registration::create($request->all()));
     }
 
 
 
     public function show(Registration $registration)
     {
-        //
+        return new RegistrationResource($registration);
     }
 
     public function edit(Registration $registration)
