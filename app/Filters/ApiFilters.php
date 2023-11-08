@@ -19,7 +19,7 @@ class ApiFilters{
             }
             $colum = $this->columMap[$parm] ?? $parm;
             foreach($operators as $operator){
-                if(!isset($query[$operator])){
+                if(isset($query[$operator])){
                     $eloQuery[] = [$colum, $this->operatorMap[$operator], $query[$operator]];
                 }
             }

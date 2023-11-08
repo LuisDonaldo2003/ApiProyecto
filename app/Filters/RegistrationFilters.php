@@ -13,7 +13,7 @@ class RegistrationFilters extends ApiFilters{
         'group_id' =>['eq'],
         'area_id' =>['eq'],
         'student_id' =>['eq'],
-        'grade' =>['eq','gt'],
+        'grade' =>['eq','gt','lt'],
         'career_id' =>['eq'],
     ];
     protected $columMap =[
