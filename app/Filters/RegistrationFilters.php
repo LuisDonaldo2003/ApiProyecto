@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Filters;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request;    
 use App\Filters\ApiFilters;
 
 class RegistrationFilters extends ApiFilters{
@@ -17,13 +17,7 @@ class RegistrationFilters extends ApiFilters{
         'career_id' =>['eq'],
     ];
     protected $columMap =[
-        'period' => 'period_id',
-        'activity' => 'activity_id',
-        'instructor' => 'instructor_id',
-        'group' => 'group_id',
-        'area' => 'area_id',
-        'student' => 'student_id',
-        'career' => 'career_id',
+
     ];
     protected $operatorMap =[
         'eq' => '=',
