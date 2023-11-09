@@ -22,6 +22,7 @@ class RegistrationResource extends JsonResource
             'group_id' => $this->group_id,
             'area_id' => $this->area_id,
             'career_id' => $this->career_id,
+            'grade' => $this->grade,
             'student_id' => $this->student_id,
         ];
     }

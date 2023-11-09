@@ -13,6 +13,7 @@ use App\Models\Student;
 use Illuminate\Http\Request;
 use App\Filters\RegistrationFilters;
 use App\Http\Requests\StoreRegistrationRequest;
+use App\Http\Requests\UpdateRegistrationRequest;
 use App\Http\Resources\RegistrationCollection;
 use App\Http\Resources\RegistrationResource;
 
@@ -50,9 +51,10 @@ class RegistrationController extends Controller
        //
     }
 
-    public function update(Request $request, Registration $registration)
+    public function update(UpdateRegistrationRequest $request, Registration $registration)
     {
      //
+     $registration->update($request->all());
     }
 
     public function destroy(Registration $registration)
