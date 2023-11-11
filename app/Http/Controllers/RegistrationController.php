@@ -2,14 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Activity;
-use App\Models\Area;
-use App\Models\Career;
-use App\Models\Group;
-use App\Models\Instructor;
-use App\Models\Period;
 use App\Models\Registration;
-use App\Models\Student;
 use Illuminate\Http\Request;
 use App\Filters\RegistrationFilters;
 use App\Http\Requests\StoreRegistrationRequest;
