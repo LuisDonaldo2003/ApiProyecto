@@ -52,7 +52,9 @@ class RegistrationController extends Controller
 
     public function destroy(Registration $registration)
     {
-        //
+        $registration->delete();
+
+        return response()->json(['message' => 'Registro eliminado exitosamente']);
     }
 
 

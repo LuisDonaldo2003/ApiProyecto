@@ -42,6 +42,4 @@
     Route::resource('registrations', RegistrationController::class);
 
 
-
-
     require __DIR__.'/auth.php';
